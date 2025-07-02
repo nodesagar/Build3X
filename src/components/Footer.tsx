@@ -22,16 +22,19 @@ const Footer = () => {
               learn from industry experts, and grow your skills in a supportive community.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+              {/* <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
                 <Github className="h-5 w-5" />
-              </a>
+              </a> */}
               <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+              <a href="https://www.instagram.com/_build3x/"
+              target='_blank' rel="noopener noreferrer"
+              aria-label="Instagram"
+               className="text-gray-400 hover:text-teal-400 transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -65,10 +68,11 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-gray-300">conveytosagar@gmail.com</li>
+              <li className="text-gray-300">buildthreex@gmail.com</li>
               <li><a target="_blank" rel="noopener noreferrer"
               href="https://discord.gg/tHxZ4x5xu6" className="text-gray-300 hover:text-teal-400 transition-colors">Discord Community</a></li>
-              <li className="text-gray-300">+91 7827154871</li>
+              <li><a target="_blank" rel="noopener noreferrer"
+              href="https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi" className="text-gray-300 hover:text-teal-400 transition-colors">WhatsApp Community</a></li>
             </ul>
           </div>
         </div>
@@ -76,7 +80,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 BuildX. All rights reserved.
+              © 2025 BuildX. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-teal-400 text-sm transition-colors">

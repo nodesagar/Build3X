@@ -56,7 +56,7 @@ const Schedule = () => {
             Bootcamp <span className="bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">Curriculum</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Three weeks of structured learning with progressive challenges. Each week builds upon the previous, 
+            Three weeks of structured learning with progressive challenges. Each week builds upon the previous,
             culminating in a comprehensive portfolio project.
           </p>
         </div>
@@ -100,7 +100,7 @@ const Schedule = () => {
             <Calendar className="h-12 w-12 text-teal-400 mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-white mb-4">Stay Connected</h3>
             <p className="text-gray-300 mb-6">
-              All sessions are conducted virtually with recorded content available for review. 
+              All sessions are conducted virtually with recorded content available for review.
               Participants receive detailed schedules and meeting links upon enrollment.
             </p>
           </div>

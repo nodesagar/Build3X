@@ -20,8 +20,8 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-teal-400" />
             <a
-             href = '#home'
-            className="text-2xl font-bold bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">
+              href='#home'
+              className="text-2xl font-bold bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">
               Build3X
             </a>
             <span className="text-sm bg-orange-500/20 text-orange-400 px-2 py-1 rounded-full font-semibold">
@@ -43,10 +43,10 @@ const Header = () => {
           </nav>
 
           <a
-          href='https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi'
-          target="_blank"
-          rel="noopener noreferrer" 
-          className="hidden md:block bg-gradient-to-r from-teal-400 to-orange-400 text-black px-6 py-2 rounded-full font-semibold hover:from-teal-300 hover:to-orange-300 transition-all duration-200 transform hover:scale-105 shadow-lg">
+            href='https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:block bg-gradient-to-r from-teal-400 to-orange-400 text-black px-6 py-2 rounded-full font-semibold hover:from-teal-300 hover:to-orange-300 transition-all duration-200 transform hover:scale-105 shadow-lg">
             Apply Now
           </a>
 
@@ -74,10 +74,10 @@ const Header = () => {
                 </a>
               ))}
               <a
-              href='https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi'
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-teal-400 to-orange-400 text-black px-6 py-2 rounded-full font-semibold mt-4 w-full">
+                href='https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi'
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-teal-400 to-orange-400 text-black px-6 py-2 rounded-full font-semibold mt-4 w-full">
                 Apply Now
               </a>
             </nav>

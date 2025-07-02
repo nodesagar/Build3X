@@ -7,7 +7,7 @@ const Mentors = () => {
       name: 'Aditya Prasad',
       role: 'Full-Stack Developer',
       company: 'BuildX',
-      expertise: ['React', 'Node.js', 'Tailwind', 'Linux','UI/UX','Figma', 'Blender', 'AppDev','TypeScript', 'REST APIs', 'Next.js', 'Express.js'],
+      expertise: ['React', 'Node.js', 'Tailwind', 'Linux', 'UI/UX', 'Figma', 'Blender', 'AppDev', 'TypeScript', 'REST APIs', 'Next.js', 'Express.js'],
       image: 'https://media.licdn.com/dms/image/v2/D5603AQE_rz6g5ZgkKA/profile-displayphoto-shrink_200_200/B56ZXeRMJjHQAY-/0/1743190803655?e=1756944000&v=beta&t=iaM6u5DHYRxUK4lKfvrTzQo11jKTHM2c-6rLnHrCSdw',
       bio: 'Full-stack developer with 3+ years of experience building scalable applications.',
       social: {
@@ -20,7 +20,7 @@ const Mentors = () => {
       name: 'Shresth Verma',
       role: 'DevOps & Backend Engineer',
       company: 'BuildX',
-      expertise: ['Node.js', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'MongoDB', 'Redis', 'GraphQL', 'REST APIs', 'Microservices',  'Serverless Architecture',],
+      expertise: ['Node.js', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'MongoDB', 'Redis', 'GraphQL', 'REST APIs', 'Microservices', 'Serverless Architecture',],
       image: 'https://pbs.twimg.com/profile_images/1593100857671053312/2JtTMlNg_400x400.jpg',
       bio: 'Technical lead specializing in Backend Systems and Cloud Applications.',
       social: {
@@ -34,13 +34,13 @@ const Mentors = () => {
       name: 'Harshit Sharma',
       role: 'Frontend and Hardware Engineer',
       company: 'BuildX',
-      expertise: [ 'React', 'Node.js', 'AppDev', 'Linux', 'Embedded Systems', 'Hardware Debugging', 'System Performance', 'OS Internals'],
+      expertise: ['React', 'Node.js', 'AppDev', 'Linux', 'Embedded Systems', 'Hardware Debugging', 'System Performance', 'OS Internals'],
       image: '/images/harshit.jpg', // Replace with actual image URL
       bio: 'Building custom PCs, exploring low-level systems, and tinkering with Linux for performance and optimization.',
       social: {
-        github: '#',
+        github: 'https://github.com/githarsh94',
         linkedin: 'https://www.linkedin.com/in/harshit-sharma-5b1002168/',
-        twitter: ''
+        twitter: 'https://x.com/gamingtalent9'
       }
     }
   ];
@@ -53,7 +53,7 @@ const Mentors = () => {
             Your <span className="bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">Mentors</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Learn from experienced developers who are passionate about helping you grow. 
+            Learn from experienced developers who are passionate about helping you grow.
             Get personalized feedback, code reviews, and career guidance throughout the bootcamp.
           </p>
         </div>

@@ -25,8 +25,8 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-teal-400 mt-1" />
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email</h4>
-                    <p className="text-gray-300">sudo.aditya@gmail.com</p>
-                    <p className="text-gray-300">verma2007s@gmail.com</p>
+                    <p className="text-gray-300">buildthreex@gmail.com</p>
+
                   </div>
                 </div>
 
@@ -48,7 +48,10 @@ const Contact = () => {
                   <MessageCircleMore className="h-6 w-6 text-teal-400 mt-1" />
                   <div>
                     <h4 className="text-white font-semibold mb-1">Whatsapp Support</h4>
-                    <p className="text-gray-300">+91-7827154871</p>
+                    <a href="https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi"
+                      target='_blank'
+                      rel="noopener noreferrer"
+                    className="text-teal-400 hover:text-teal-300 transition-colors">Build3X</a>
                   </div>
                 </div>
 
@@ -130,13 +133,13 @@ const Contact = () => {
         </div>
 
         {/* Support Hours */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="bg-gray-900/50 rounded-2xl p-8 border border-teal-400/30">
             <h3 className="text-2xl font-bold text-white mb-4">Support Hours</h3>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
                 <h4 className="text-teal-400 font-semibold mb-2">Pre-Bootcamp</h4>
-                <p className="text-gray-300">Mon-Fri: 9 AM - 6 PM UTC</p>
+                <p className="text-gray-300">Mon-Fri: 9 AM - 6 PM GMT+5:30</p>
               </div>
               <div>
                 <h4 className="text-orange-400 font-semibold mb-2">During Bootcamp</h4>
@@ -148,7 +151,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

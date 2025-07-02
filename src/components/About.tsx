@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Lightbulb, Users, Award } from 'lucide-react';
+import { Code, Lightbulb, Users, Award, Instagram, MessageCircleMore, MessageCircle } from 'lucide-react';
 
 const About = () => {
   const features = [
@@ -33,7 +33,7 @@ const About = () => {
             About <span className="bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">Build3X</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Build3X is an intensive development bootcamp designed to accelerate your coding journey. 
+            Build3X is an intensive development bootcamp designed to accelerate your coding journey.
             Season 1 brings together aspiring developers for three weeks of structured learning and project building.
           </p>
         </div>
@@ -57,7 +57,7 @@ const About = () => {
                 Open to developers ready to level up their skills!
               </h3>
               <p className="text-gray-300 mb-6">
-                Whether you're a beginner looking to build your first projects or an intermediate developer 
+                Whether you're a beginner looking to build your first projects or an intermediate developer
                 wanting to expand your portfolio, Build3X Season 1 provides the structure and support you need.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -81,8 +81,56 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <div className="mt-16 text-center">
+          <div className="bg-gray-900/50 rounded-2xl p-8 border border-teal-400/30">
+            <h3 className="text-2xl font-bold text-white mb-4">Let's Connect</h3>
+
+            <div className="grid md:grid-cols-3 gap-6 text-center">
+              
+
+            
+
+              <div className="flex flex-col items-center text-center space-y-2">
+                  <Instagram className="h-6 w-6 text-teal-400  mt-1" />
+                  <div>
+                    <h4 className="text-teal-400 font-semibold mb-2">Instagram</h4>
+                    <a href="https://www.instagram.com/_build3x"
+                      target='_blank'
+                      rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-teal-300 transition-colors">Build3X</a>
+                </div>
+              </div>
+
+
+                <div className="flex flex-col items-center text-center space-y-2">
+                  <MessageCircleMore className="h-6 w-6 text-orange-400  mt-1" />
+                  <div>
+                    <h4 className="text-orange-400 font-semibold mb-2">Whatsapp Support</h4>
+                    <a href="https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi"
+                      target='_blank'
+                      rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-teal-300 transition-colors">Build3X</a>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center text-center space-y-2">
+                <MessageCircle className="h-6 w-6 text-teal-400 mt-1" />
+                <div>
+                  <h4 className="text-teal-400 font-semibold mb-2">Discord Community</h4>
+                  <a href="https://discord.gg/tHxZ4x5xu6"
+                    target='_blank'
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-teal-300 transition-colors">Join our Discord</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+     
   );
 };
 
