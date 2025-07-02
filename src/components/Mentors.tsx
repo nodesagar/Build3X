@@ -24,7 +24,7 @@ const Mentors = () => {
       image: 'https://pbs.twimg.com/profile_images/1593100857671053312/2JtTMlNg_400x400.jpg',
       bio: 'Technical lead specializing in Backend Systems and Cloud Applications.',
       social: {
-        github: '#',
+        github: 'https://github.com/shreverr',
         linkedin: 'https://www.linkedin.com/in/shreshth-verma/',
         twitter: 'https://x.com/shreshthverma'
       }
@@ -32,9 +32,9 @@ const Mentors = () => {
 
     {
       name: 'Harshit Sharma',
-      role: 'Frontend and hardwdare Engineer',
+      role: 'Frontend and Hardware Engineer',
       company: 'BuildX',
-      expertise: ['Linux', 'Embedded Systems', 'Computer Architecture', 'Hardware Debugging', 'System Performance', 'Open Source', 'Networking', 'OS Internals'],
+      expertise: [ 'React', 'Node.js', 'AppDev', 'Linux', 'Embedded Systems', 'Hardware Debugging', 'System Performance', 'OS Internals'],
       image: '/images/harshit.jpg', // Replace with actual image URL
       bio: 'Building custom PCs, exploring low-level systems, and tinkering with Linux for performance and optimization.',
       social: {

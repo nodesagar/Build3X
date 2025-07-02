@@ -8,7 +8,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
         style={{
-          backgroundImage: `url('/Teal and Orange Gradient Abstract Tech Conference Poster (1).png')`
+          backgroundImage: `url('/Teal and Orange Gradient Abstract Tech Conference Poster (3).png')`
         }}
       />
       
@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <div className="flex items-center space-x-2 text-orange-400">
               <Calendar className="h-5 w-5" />
-              <span className="font-semibold">July 07 - 27, 2024</span>
+              <span className="font-semibold">July 07 - 27, 2025</span>
             </div>
             <div className="flex items-center space-x-2 text-teal-400">
               <Users className="h-5 w-5" />

@@ -77,7 +77,7 @@ const About = () => {
                 3
               </div>
               <div className="text-xl text-white font-semibold mb-2">Weeks of Intensive Learning</div>
-              <div className="text-gray-300">July 7 - July 27, 2024</div>
+              <div className="text-gray-300">July 7 - July 27, 2025</div>
             </div>
           </div>
         </div>

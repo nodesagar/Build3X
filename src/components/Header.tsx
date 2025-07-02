@@ -19,9 +19,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-teal-400" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">
+            <a
+             href = '#home'
+            className="text-2xl font-bold bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">
               Build3X
-            </span>
+            </a>
             <span className="text-sm bg-orange-500/20 text-orange-400 px-2 py-1 rounded-full font-semibold">
               S1
             </span>
