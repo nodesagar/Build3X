@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { User, Mail, Users, Code, CheckCircle } from 'lucide-react';
+import { supabase } from '../../supabase';
 
 type FormData = {
   firstName: string;
@@ -9,7 +11,6 @@ type FormData = {
   university: string;
   year: string;
   experience: string;
-  preferredTrack: string;
   skills: string[];
   motivation: string;
   portfolio: string;
@@ -26,7 +27,6 @@ const Registration = () => {
     university: '',
     year: '',
     experience: '',
-    preferredTrack: '',
     skills: [],
     motivation: '',
     portfolio: '',
@@ -36,6 +36,15 @@ const Registration = () => {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  useEffect(() => {
+  if (isSubmitted) {
+    const el = document.getElementById("submission-success");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }
+}, [isSubmitted]);
+
   const experienceLevels = [
     'Beginner (0-1 years)',
     'Intermediate (1-3 years)',
@@ -43,17 +52,18 @@ const Registration = () => {
     'Expert (5+ years)'
   ];
 
-  const tracks = [
-    'Frontend Development',
-    'Backend Development',
-    'Full Stack Development',
-    'Mobile Development',
-    'DevOps & Cloud'
-  ];
+  // const tracks = [
+  //   'Frontend Development',
+  //   'Backend Development',
+  //   'Full Stack Development',
+  //   'Mobile Development',
+  //   'DevOps & Cloud'
+  // ];
 
   const skillOptions = [
-    'JavaScript', 'Python', 'React', 'Node.js', 'Java', 'C++', 'Mobile Development',
-    'Database Design', 'API Development', 'UI/UX Design', 'DevOps', 'Git/GitHub'
+    'JavaScript', 'html', 'CSS', 'React', 'Node.js', 'Python', 'Java', 'C/C++', 'Database Design', 'Andriod/IOS',
+     'API Development', 'Figma / UI/UX', 'AWS/Azure', 'Git/GitHub',
+    'Linux', 'Blockchain', 'Unity/Unreal','Animation/Blender'
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -75,22 +85,51 @@ const Registration = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Application submitted:', formData);
+ // Make sure your client is imported
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  console.log("Form data before submission:", formData);
+
+  const { error } = await supabase
+    .from('registrations')
+    .insert([formData]);
+
+  if (error) {
+  console.error("Supabase error:", error);
+  alert(`Submission failed: ${error.message}`);
+  }
+
+   else {
+    console.log("✅ Submitted:", formData);
     setIsSubmitted(true);
-  };
+  }
+};
+
+
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   console.log('Application submitted:', formData);
+  //   setIsSubmitted(true);
+  // };
 
   if (isSubmitted) {
     return (
-      <section className="py-20 bg-gray-900">
+      <section id="submission-success" className="py-20 bg-gray-900" animate-fade-in>
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-black/50 rounded-2xl p-12 border border-teal-400/30">
             <CheckCircle className="h-16 w-16 text-teal-400 mx-auto mb-6" />
             <h2 className="text-3xl font-bold text-white mb-4">Application Submitted!</h2>
             <p className="text-gray-300 mb-6">
-              Thank you for applying to BuildX Season 1! We've received your application and will review it carefully. 
-              You'll hear back from us within 3-5 business days with next steps.
+              Thank you for applying to Build3X Season 1 — we're excited to have you with us.
+              To proceed further, please join the official community group using the link below:
+              <a className='text-teal-400 hover:text-teal-300 transition-colors'
+              target='_blank'
+              rel="noopener noreferrer" 
+              href="https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi"> WhatsApp group</a>
+
+.
             </p>
             <button
               onClick={() => setIsSubmitted(false)}
@@ -109,7 +148,7 @@ const Registration = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Apply for <span className="bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">BuildX S1</span>
+            Apply for <span className="bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">Build3X S1</span>
           </h2>
           <p className="text-xl text-gray-300">
             Join our first cohort of passionate developers ready to build, learn, and grow together.
@@ -211,7 +250,7 @@ const Registration = () => {
               <Code className="h-6 w-6 text-teal-400 mr-2" />
               Technical Background
             </h3>
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="grid md:grid-cols-1 mb-8 gap-6">
               <div>
                 <label className="block text-gray-300 font-medium mb-2">Programming Experience *</label>
                 <select
@@ -227,7 +266,7 @@ const Registration = () => {
                   ))}
                 </select>
               </div>
-              <div>
+              {/* <div>
                 <label className="block text-gray-300 font-medium mb-2">Preferred Learning Track</label>
                 <select
                   name="preferredTrack"
@@ -240,7 +279,7 @@ const Registration = () => {
                     <option key={track} value={track}>{track}</option>
                   ))}
                 </select>
-              </div>
+              </div> */}
             </div>
 
             <div className="mb-6">
@@ -264,13 +303,13 @@ const Registration = () => {
             </div>
 
             <div>
-              <label className="block text-gray-300 font-medium mb-2">Portfolio/GitHub URL</label>
+              <label className="block text-gray-300 font-medium mb-2">Portfolio/GitHub/Linkedin URL</label>
               <input
                 type="url"
                 name="portfolio"
                 value={formData.portfolio}
                 onChange={handleInputChange}
-                placeholder="https://github.com/yourusername"
+                placeholder="https://linkedin.com/in/yourusername"
                 className="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-teal-400 focus:outline-none transition-colors"
               />
             </div>
@@ -300,16 +339,15 @@ const Registration = () => {
           {/* Motivation */}
           <div className="mb-8">
             <label className="block text-gray-300 font-medium mb-2">
-              Why do you want to join BuildX Season 1? *
+              Is there anything else you'd like to share?
             </label>
             <textarea
               name="motivation"
               value={formData.motivation}
               onChange={handleInputChange}
-              required
               rows={4}
               className="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-teal-400 focus:outline-none transition-colors"
-              placeholder="Tell us about your goals, what you hope to learn, and how BuildX fits into your development journey..."
+              placeholder="Tell us about your goals, what you hope to learn, and how Build3X fits into your development journey..."
             />
           </div>
 
@@ -325,7 +363,7 @@ const Registration = () => {
                 className="mt-1 h-4 w-4 text-teal-400 bg-gray-800 border-gray-600 rounded focus:ring-teal-400"
               />
               <span className="text-gray-300 text-sm">
-                I agree to the terms and conditions and commit to actively participating in all three weeks of the bootcamp. 
+                I agree to the terms and conditions and commit to actively participating in all zero to three weeks of the bootcamp. 
                 I understand this is a virtual program requiring dedicated time and effort. *
               </span>
             </label>

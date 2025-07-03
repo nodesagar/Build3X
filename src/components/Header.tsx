@@ -43,9 +43,7 @@ const Header = () => {
           </nav>
 
           <a
-            href='https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi'
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#register"
             className="hidden md:block bg-gradient-to-r from-teal-400 to-orange-400 text-black px-6 py-2 rounded-full font-semibold hover:from-teal-300 hover:to-orange-300 transition-all duration-200 transform hover:scale-105 shadow-lg">
             Apply Now
           </a>
@@ -74,10 +72,8 @@ const Header = () => {
                 </a>
               ))}
               <a
-                href='https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi'
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-teal-400 to-orange-400 text-black px-6 py-2 rounded-full font-semibold mt-4 w-full">
+                href="#register"
+                className="bg-gradient-to-r from-teal-400 to-orange-400 text-black px-7 py-3 rounded-full font-semibold mt-4 w-full text-center hover:from-teal-300 hover:to-orange-300 transition-all duration-200 transform hover:scale-105 shadow-lg ">
                 Apply Now
               </a>
             </nav>

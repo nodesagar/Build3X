@@ -6,8 +6,8 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'Who can join BuildX Season 1?',
-      answer: 'BuildX S1 is open to developers of all skill levels who are committed to learning and building projects. Whether you\'re a beginner looking to build your first portfolio or an intermediate developer wanting to enhance your skills, our bootcamp is designed to help you grow.'
+      question: 'Who can join Build3X Season 1?',
+      answer: 'Build3X S1 is open to developers of all skill levels who are committed to learning and building projects. Whether you\'re a beginner looking to build your first portfolio or an intermediate developer wanting to enhance your skills, our bootcamp is designed to help you grow.'
     },
     {
       question: 'How does the 3-week bootcamp structure work?',
@@ -15,7 +15,7 @@ const FAQ = () => {
     },
     {
       question: 'Is this bootcamp completely virtual?',
-      answer: 'Yes, BuildX Season 1 is a fully virtual bootcamp. All workshops, mentor sessions, and presentations are conducted online, making it accessible to participants worldwide. We provide all necessary tools and platforms for effective remote learning.'
+      answer: 'Yes, Build3X Season 1 is a fully virtual bootcamp. All workshops, mentor sessions, and presentations are conducted online, making it accessible to participants worldwide. We provide all necessary tools and platforms for effective remote learning.'
     },
     {
       question: 'What kind of projects will I build?',
@@ -23,7 +23,7 @@ const FAQ = () => {
     },
     {
       question: 'Do I need to participate in all three weeks?',
-      answer: 'Yes, BuildX is designed as a cohesive 3-week program where each week builds upon the previous. Full participation ensures you get the complete learning experience and build a comprehensive portfolio of projects.'
+      answer: 'Yes, Build3X is designed as a cohesive 3-week program where each week builds upon the previous. Full participation ensures you get the complete learning experience and build a comprehensive portfolio of projects.'
     },
     {
       question: 'What technologies and tools should I know?',
@@ -39,7 +39,7 @@ const FAQ = () => {
     },
     {
       question: 'Will I receive a certificate upon completion?',
-      answer: 'Yes! Participants who successfully complete all three weeks and submit their projects will receive a BuildX Season 1 completion certificate, along with a portfolio of projects to showcase to potential employers.'
+      answer: 'Yes! Participants who successfully complete all three weeks and submit their projects will receive a Build3X Season 1 completion certificate, along with a portfolio of projects to showcase to potential employers.'
     },
     {
       question: 'How do I apply and what\'s the selection process?',
@@ -59,7 +59,7 @@ const FAQ = () => {
             Frequently Asked <span className="bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">Questions</span>
           </h2>
           <p className="text-xl text-gray-300">
-            Everything you need to know about BuildX Season 1 bootcamp.
+            Everything you need to know about Build3X Season 1 bootcamp.
           </p>
         </div>
 
@@ -95,9 +95,9 @@ const FAQ = () => {
             <p className="text-gray-300 mb-6">
               Can't find what you're looking for? Our team is here to help you with any additional questions about the bootcamp.
             </p>
-            <button className="bg-gradient-to-r from-teal-400 to-orange-400 text-black px-8 py-3 rounded-full font-semibold hover:from-teal-300 hover:to-orange-300 transition-all duration-200">
+            <a href='#contact' className="bg-gradient-to-r from-teal-400 to-orange-400 text-black px-8 py-3 rounded-full font-semibold hover:from-teal-300 hover:to-orange-300 transition-all duration-200">
               Contact Support
-            </button>
+            </a>
           </div>
         </div>
       </div>

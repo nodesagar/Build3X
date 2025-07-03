@@ -54,7 +54,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-bold text-white mb-4">
-                Open to developers ready to level up their skills!
+                Open to Students & developers ready to level up their skills!
               </h3>
               <p className="text-gray-300 mb-6">
                 Whether you're a beginner looking to build your first projects or an intermediate developer
@@ -77,7 +77,7 @@ const About = () => {
                 3
               </div>
               <div className="text-xl text-white font-semibold mb-2">Weeks of Intensive Learning</div>
-              <div className="text-gray-300">July 7 - July 27, 2025</div>
+              <div className="text-gray-300">July, 2025</div>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ const About = () => {
                     <a href="https://www.instagram.com/_build3x"
                       target='_blank'
                       rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-teal-300 transition-colors">Build3X</a>
+                    className="text-gray-300 hover:text-teal-300 transition-colors">Follow @_build3X</a>
                 </div>
               </div>
 
@@ -110,7 +110,7 @@ const About = () => {
                     <a href="https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi"
                       target='_blank'
                       rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-teal-300 transition-colors">Build3X</a>
+                    className="text-gray-300 hover:text-teal-300 transition-colors">Join Group</a>
                 </div>
               </div>
 
@@ -121,7 +121,7 @@ const About = () => {
                   <a href="https://discord.gg/tHxZ4x5xu6"
                     target='_blank'
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-teal-300 transition-colors">Join our Discord</a>
+                    className="text-gray-300 hover:text-teal-300 transition-colors">Join Server</a>
                 </div>
               </div>
             </div>

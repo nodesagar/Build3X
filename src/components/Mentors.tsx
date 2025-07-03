@@ -6,8 +6,9 @@ const Mentors = () => {
     {
       name: 'Aditya Prasad',
       role: 'Full-Stack Developer',
-      company: 'BuildX',
-      expertise: ['React', 'Node.js', 'Tailwind', 'Linux', 'UI/UX', 'Figma', 'Blender', 'AppDev', 'TypeScript', 'REST APIs', 'Next.js', 'Express.js'],
+      company: 'Build3X',
+      expertise: ['React', 'Node.js', 'TypeScript', 'Tailwind', 'WebRTC', 'GSAP', 'Firebase/Supabase', 'Linux', 'UI/UX', 'Figma', 'Blender', 'Android/iOS', 'REST APIs', 'Next.js', 'Express.js', 'Docker', 'Git/GitHub'
+],
       image: 'https://media.licdn.com/dms/image/v2/D5603AQE_rz6g5ZgkKA/profile-displayphoto-shrink_200_200/B56ZXeRMJjHQAY-/0/1743190803655?e=1756944000&v=beta&t=iaM6u5DHYRxUK4lKfvrTzQo11jKTHM2c-6rLnHrCSdw',
       bio: 'Full-stack developer with 3+ years of experience building scalable applications.',
       social: {
@@ -19,8 +20,10 @@ const Mentors = () => {
     {
       name: 'Shresth Verma',
       role: 'DevOps & Backend Engineer',
-      company: 'BuildX',
-      expertise: ['Node.js', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'MongoDB', 'Redis', 'GraphQL', 'REST APIs', 'Microservices', 'Serverless Architecture',],
+      company: 'Build3X',
+      expertise: ['AWS (EC2, S3, Lambda)', 'Docker', 'Kubernetes', 'CI/CD', 'Redis', 'GraphQL', 'REST APIs', 'Microservices', 'Serverless Architecture',
+        'PostgreSQL', 'Terraform','Jenkins','Load Balancing',
+,],
       image: 'https://pbs.twimg.com/profile_images/1593100857671053312/2JtTMlNg_400x400.jpg',
       bio: 'Technical lead specializing in Backend Systems and Cloud Applications.',
       social: {
@@ -33,8 +36,8 @@ const Mentors = () => {
     {
       name: 'Harshit Sharma',
       role: 'Frontend and Hardware Engineer',
-      company: 'BuildX',
-      expertise: ['React', 'Node.js', 'AppDev', 'Linux', 'Embedded Systems', 'Hardware Debugging', 'System Performance', 'OS Internals'],
+      company: 'Build3X',
+      expertise: ['React', 'Node.js', 'AppDev', 'Linux', 'Embedded Systems', 'Hardware Debugging', 'JWT', 'WebSockets', 'RESTful APIs','System Performance', 'OS Internals'],
       image: '/images/harshit.jpg', // Replace with actual image URL
       bio: 'Building custom PCs, exploring low-level systems, and tinkering with Linux for performance and optimization.',
       social: {

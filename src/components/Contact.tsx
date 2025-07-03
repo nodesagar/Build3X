@@ -10,7 +10,7 @@ const Contact = () => {
             Get in <span className="bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Have questions about BuildX Season 1? Need help with your application? Our team is here to support you.
+            Have questions about Build3X Season 1? Need help with your application? Our team is here to support you.
           </p>
         </div>
 
@@ -25,7 +25,7 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-teal-400 mt-1" />
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email</h4>
-                    <p className="text-gray-300">buildthreex@gmail.com</p>
+                    <p className="text-teal-400 hover:text-teal-300 transition-colors">buildthreex@gmail.com</p>
 
                   </div>
                 </div>
@@ -118,7 +118,7 @@ const Contact = () => {
                 <textarea
                   rows={5}
                   className="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-teal-400 focus:outline-none transition-colors"
-                  placeholder="How can we help you with BuildX Season 1?"
+                  placeholder="How can we help you with Build3X Season 1?"
                 />
               </div>
 

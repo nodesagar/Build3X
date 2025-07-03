@@ -4,36 +4,48 @@ import { Calendar, Clock, MapPin } from 'lucide-react';
 const Schedule = () => {
   const curriculum = [
     {
+      week: 'Week 0',
+      // date: 'July 7 - July 13',
+      title: 'Kick off & Basics',
+      events: [
+        { time: 'July 15, 3:00 PM', event: 'Introduction to the program, overview of tools and timelines. Problem statements released to all participants.', type: 'ceremony' },
+        { time: 'July 15, 3:00 PM', event: 'Hands-on session to Javascript, Git, GitHub, React, Node.js, and other required libraries.', type: 'workshop' },
+        { event: 'A warm-up coding task to ensure everyone is set up technically and understands the submission process.', type: 'mentoring' },
+        { time: 'July 15, 3:00 PM', event: 'Submit your Week 1 foundation project (landing page, basic backend setup, or wireframe). Peer feedback begins.', type: 'deadline' },
+      ]
+    },
+    {
       week: 'Week 1',
-      date: 'July 7 - July 13',
+      // date: 'July 14 - July 20',
       title: 'Foundation Building',
       events: [
-        { time: 'July 7', event: 'Bootcamp Kickoff & Problem Statement Release', type: 'ceremony' },
-        { time: 'July 8', event: 'Development Environment Setup Workshop', type: 'workshop' },
-        { time: 'July 10,', event: 'Mentor Office Hours & Code Review', type: 'mentoring' },
-        { time: 'July 13', event: 'Week 1 Project Submission', type: 'deadline' },
+        {  event: 'Dive deep into frontend/backend architecture, database options, and API integration strategies.', type: 'ceremony' },
+        { time: 'July 15, 3:00 PM', event: 'Topics include component-based architecture, responsive UI, API handling, and error handling.', type: 'workshop' },
+        { time: 'July 17, 6:00 PM', event: 'Breakout mentor sessions for reviewing code structure, commit hygiene, and debugging techniques.', type: 'mentoring' },
+        { time: 'July 20, 11:59 PM', event: 'Participants submit the MVP with basic functionality. Focus on frontend/backend working together.', type: 'deadline' },
       ]
     },
     {
       week: 'Week 2',
-      date: 'July 14 - July 20',
+      // date: 'July 21 - July 27',
       title: 'Advanced Implementation',
       events: [
-        { time: 'July 14, 10:00 AM', event: 'Week 2 Problem Statement & Technical Brief', type: 'ceremony' },
-        { time: 'July 15, 3:00 PM', event: 'Advanced Development Techniques Workshop', type: 'workshop' },
-        { time: 'July 17, 6:00 PM', event: 'Mentor Code Review & Feedback Session', type: 'mentoring' },
-        { time: 'July 20, 11:59 PM', event: 'Week 2 Project Submission', type: 'deadline' },
+        { time: 'July 21, 10:00 AM', event:'Refine and finalize the problem statement with expected features and stretch goals.', type: 'ceremony' },
+        { time: 'July 22, 2:00 PM', event: 'Learn how to present your project in demos. Cover storytelling, live demos, and GitHub portfolio tips.', type: 'workshop' },
+        { time: 'July 24, 6:00 PM', event: 'One-on-one or group sessions on career advice, resumes, LinkedIn/GitHub cleanup, and project polishing.', type: 'mentoring' },
+        { time: 'July 27, 2:00 PM', event: 'Participants present their final product. Judges give feedback.', type: 'deadline' },
       ]
     },
+
     {
       week: 'Week 3',
-      date: 'July 21 - July 27',
-      title: 'Portfolio Project',
+      // date: 'July 21 - July 27',
+      title: 'Final Hackathon',
       events: [
-        { time: 'July 21, 10:00 AM', event: 'Final Project Brief & Requirements', type: 'ceremony' },
-        { time: 'July 22, 2:00 PM', event: 'Portfolio Presentation Workshop', type: 'workshop' },
-        { time: 'July 24, 6:00 PM', event: 'Final Mentor Review & Career Guidance', type: 'mentoring' },
-        { time: 'July 27, 2:00 PM', event: 'Project Showcase & Graduation Ceremony', type: 'ceremony' },
+        { time: 'July 21, 10:00 AM', event: 'Official start of the week-long hackathon. Final briefing, judging criteria explained. Clear expectations set for deliverables and checkpoints.', type: 'ceremony' },
+        { time: 'July 22, 2:00 PM', event: 'Mid-hackathon review session. Mentors provide feedback on current builds, unblock teams on technical issues, and offer advice on scalability, UX, and code quality.', type: 'workshop' },
+        { time: 'July 24, 6:00 PM', event: 'Teams focus on debugging, optimizing performance, writing documentation, and packaging their projects for final submission. Submit projects via the portal (with GitHub + demo links).', type: 'mentoring' },
+        { time: 'July 27, 2:00 PM', event: 'Each team presents their solution live or via recorded demo. Judges review and score projects. Winners announced, awards distributed, and the bootcamp officially closes with team shoutouts', type: 'deadline' },
       ]
     }
   ];
@@ -56,7 +68,7 @@ const Schedule = () => {
             Bootcamp <span className="bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent">Curriculum</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Three weeks of structured learning with progressive challenges. Each week builds upon the previous,
+            Zero three weeks of structured learning with progressive challenges. Each week builds upon the previous,
             culminating in a comprehensive portfolio project.
           </p>
         </div>
@@ -67,8 +79,8 @@ const Schedule = () => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
                 <div>
                   <h3 className="text-3xl font-bold text-white mb-2">{week.week}</h3>
-                  <p className="text-teal-400 font-semibold text-lg">{week.date}</p>
-                  <p className="text-orange-400 font-medium">{week.title}</p>
+                  {/* <p className="text-teal-400 font-semibold text-lg">{week.date}</p> */}
+                  <p className="text-teal-400 text-lg font-medium">{week.title}</p>
                 </div>
                 <div className="mt-4 md:mt-0">
                   <div className="flex items-center space-x-2 text-gray-300">
@@ -81,11 +93,11 @@ const Schedule = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 {week.events.map((event, eventIndex) => (
                   <div key={eventIndex} className={`p-4 rounded-lg border ${getEventTypeColor(event.type)}`}>
-                    <div className="flex items-start space-x-3">
+                    <div className="flex items-center space-x-3">
                       <Clock className="h-5 w-5 mt-1 flex-shrink-0" />
                       <div>
-                        <p className="font-semibold mb-1">{event.time}</p>
-                        <p className="text-sm opacity-90">{event.event}</p>
+                        {/* <p className="font-semibold mb-1">{event.time}</p> */}
+                        <p className="text-s opacity-90">{event.event}</p>
                       </div>
                     </div>
                   </div>
