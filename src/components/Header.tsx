@@ -11,6 +11,7 @@ const Header = () => {
     { name: 'Mentors', href: '#mentors' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Resources', href: 'https://www.notion.so/ocean07/BUILD3X-2254afacb8b880c5ae8bca589a939f5f' },
   ];
 
   return (
@@ -36,6 +37,7 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className="text-gray-300 hover:text-teal-400 transition-colors duration-200 font-medium"
+                {...(item.name === 'Resources' ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               >
                 {item.name}
               </a>
@@ -73,6 +75,7 @@ const Header = () => {
               ))}
               <a
                 href="#register"
+                onClick={() => setIsMenuOpen(false)}
                 className="bg-gradient-to-r from-teal-400 to-orange-400 text-black px-7 py-3 rounded-full font-semibold mt-4 w-full text-center hover:from-teal-300 hover:to-orange-300 transition-all duration-200 transform hover:scale-105 shadow-lg ">
                 Apply Now
               </a>

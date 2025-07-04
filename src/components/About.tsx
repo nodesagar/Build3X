@@ -107,7 +107,7 @@ const About = () => {
                   <Youtube className="h-6 w-6 text-orange-400  mt-1" />
                   <div>
                     <h4 className="text-orange-400 font-semibold mb-2">Youtube</h4>
-                    <a href="https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi"
+                    <a href="https://www.youtube.com/@Build3X"
                       target='_blank'
                       rel="noopener noreferrer"
                     className="text-gray-300 hover:text-teal-300 transition-colors">Subscribe Here</a>
