@@ -283,7 +283,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             </div>
 
             <div className="mb-6">
-              <label className="block text-gray-300 font-medium mb-2">Technical Skills (Select all that apply)</label>
+              <label className="block text-gray-300 font-medium mb-2">Your Technical Skills: (Select all that apply)</label>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {skillOptions.map(skill => (
                   <button

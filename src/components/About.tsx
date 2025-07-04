@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Lightbulb, Users, Award, Instagram, MessageCircleMore, MessageCircle } from 'lucide-react';
+import { Code, Lightbulb, Users, Award, Instagram, Youtube, MessageCircle } from 'lucide-react';
 
 const About = () => {
   const features = [
@@ -104,13 +104,13 @@ const About = () => {
 
 
                 <div className="flex flex-col items-center text-center space-y-2">
-                  <MessageCircleMore className="h-6 w-6 text-orange-400  mt-1" />
+                  <Youtube className="h-6 w-6 text-orange-400  mt-1" />
                   <div>
-                    <h4 className="text-orange-400 font-semibold mb-2">Whatsapp Support</h4>
+                    <h4 className="text-orange-400 font-semibold mb-2">Youtube</h4>
                     <a href="https://chat.whatsapp.com/BjZ3QgyzTX68qSXi4wmmOi"
                       target='_blank'
                       rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-teal-300 transition-colors">Join Group</a>
+                    className="text-gray-300 hover:text-teal-300 transition-colors">Subscribe Here</a>
                 </div>
               </div>
 
@@ -118,7 +118,7 @@ const About = () => {
                 <MessageCircle className="h-6 w-6 text-teal-400 mt-1" />
                 <div>
                   <h4 className="text-teal-400 font-semibold mb-2">Discord Community</h4>
-                  <a href="https://discord.gg/tHxZ4x5xu6"
+                  <a href="https://discord.com/invite/JDSQvchS"
                     target='_blank'
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-teal-300 transition-colors">Join Server</a>

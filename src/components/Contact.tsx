@@ -35,7 +35,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-white font-semibold mb-1">Discord Community</h4>
                     <p className="text-gray-300">Join our Discord for community support</p>
-                    <a href="https://discord.gg/tHxZ4x5xu6"
+                    <a href="https://discord.com/invite/JDSQvchS"
                       target='_blank'
                       rel="noopener noreferrer"
                       className="text-teal-400 hover:text-teal-300 transition-colors">

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Github, Linkedin, Twitter } from 'lucide-react';
 
+
+
 const Mentors = () => {
   const mentors = [
     {
@@ -35,7 +37,7 @@ const Mentors = () => {
 
     {
       name: 'Harshit Sharma',
-      role: 'Frontend and Hardware Engineer',
+      role: 'Full-Stack and Hardware Engineer',
       company: 'Build3X',
       expertise: ['React', 'Node.js', 'AppDev', 'Linux', 'Embedded Systems', 'Hardware Debugging', 'JWT', 'WebSockets', 'RESTful APIs','System Performance', 'OS Internals'],
       image: '/images/harshit.jpg', // Replace with actual image URL
